@@ -12,5 +12,5 @@ sobrenome = gets.chomp
 puts ("Digite a sua idade")
 idade = gets.chomp
 
-puts ("Meu nome é #{nome} #{sobrenome}, é tenho #{idade} anos!")
+puts ("Nome: #{nome} #{sobrenome}, idade: #{idade} anos!")
 
