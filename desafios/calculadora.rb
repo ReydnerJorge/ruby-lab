@@ -24,37 +24,43 @@ loop do
     opcao = gets.chomp.to_i
     
     case opcao
-    when opcao = 1
+    when 1
         print "Digite o primeiro número: "
         num1 = gets.chomp.to_i
         print "Digite o segundo número: "
         num2 = gets.chomp.to_i
         soma = num1 + num2
-        puts soma
-    when opcao = 2 
+        puts "Resultado: #{soma}"
+    when 2 
         print "Digite o primeiro número: "
         num1 = gets.chomp.to_i
         print "Digite o segundo número: "
         num2 = gets.chomp.to_i
         subtracao = num1 - num2
-        puts subtracao
-    when opcao = 3
+        puts "Resultado: #{subtracao}"
+    when 3
         print "Digite o primeiro número: "
         num1 = gets.chomp.to_i
         print "Digite o segundo número: "
         num2 = gets.chomp.to_i
         multiplicacao = num1 * num2
-        puts multiplicacao
-    when opcao = 4
+        puts "Resultado #{multiplicacao}"
+    when 4
         print "Digite o primeiro número: "
-        num1 = gets.chomp.to_i
+        num1 = gets.chomp.to_f
         print "Digite o segundo número: "
-        num2 = gets.chomp.to_i
-        divisao = num1 / num2
-        puts divisao
-    when opcao = 0
-        puts "Fechando o programa"
-        break
+        num2 = gets.chomp.to_f
+        if num2 == 0
+            puts "Erro: Divisão por zero não é permitida."
+        else
+            divisao = num1 / num2
+            puts "Resultado: #{divisao}"
+        end
+    when 0
+            puts "Fechando o programa"
+            break
+        else 
+            puts "Opção inválida! Tente novamente."
     end
     #comando que limpa o console
     system "clear"
