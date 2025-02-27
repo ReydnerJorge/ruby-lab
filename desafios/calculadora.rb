@@ -18,6 +18,9 @@ loop do
     puts "2 - Subtração"
     puts "3 - Multiplicação"
     puts "4 - Divisão"
+    puts "5 - Exponenciação"
+    puts "6 - Módulo"
+    puts "7 - Raiz Quadrada"
     puts "0 - Sair"
     print "Digite sua escolha: "
 
@@ -55,6 +58,31 @@ loop do
         else
             divisao = num1 / num2
             puts "Resultado: #{divisao}"
+        end
+    when 5
+        print "Digite o primeiro número: "
+        num1 = gets.chomp.to_i
+        print "Digite o segundo número: "
+        num2 = gets.chomp.to_i
+        exponenciacao = num1 ** num2
+        puts "Resultado: #{exponenciacao}"
+    when 6
+        print "Digite o primeiro número: "
+        num1 = gets.chomp.to_i
+        print "Digite o segundo número: "
+        num2 = gets.chomp.to_i
+        if num2 != 0 
+            puts "Resultado: #{num1 % num2}"
+        else 
+            puts "Erro: Divisão por zero não permitida!"
+        end
+    when 7 
+        print "Digite um número: "
+        num1 = gets.chomp.to_i
+        if num1 >= 0
+            puts Math.sqrt(num1)
+        else 
+            puts "Erro: Não é possível calcular a raiz quadrada de um número negativo!"
         end
     when 0
             puts "Fechando o programa"
