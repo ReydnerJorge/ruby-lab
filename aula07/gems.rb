@@ -37,10 +37,15 @@ def meu_SO
     end
 end
 
-info = Sys::Uname.uname
+#info = Sys::Uname.uname
 
 puts "Meu PC é #{OS.bits} bits, possui #{OS.cpu_count} cores e o sistema operacional é #{meu_SO}"
 # puts "Sistema Operacional: #{OS.report}" 
+# puts "Nome do Sistema: #{info.sysname}"
+# puts "Nome do Host: #{info.nodename}"
+# puts "Versão: #{info.version}"
+# puts "Release: #{info.release}"
+# puts "Arquitetura: #{info.machine}"
 
 #3. No final de tudo queremos que o programa imprima qual o sist. operacional
 #e o número de bits e as cores do seu PC
