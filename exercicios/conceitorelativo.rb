@@ -30,3 +30,6 @@ else
     end
   end
 end
+
+
+## refatorar o codigo e utilizar o case 
