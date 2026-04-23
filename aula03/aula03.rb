@@ -1,2 +1,2 @@
 puts "Primeiro desafio utilizando Ruby"
-puts ¨Estou voltando he he¨
+puts "Estou voltando he he"
